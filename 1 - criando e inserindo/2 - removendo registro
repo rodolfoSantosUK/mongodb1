@@ -1,0 +1,37 @@
+db.alunos.remove({
+"_id" :  ObjectId("5f743c8fc11f0bbeae272827")
+})
+
+
+db.alunos.insert(
+{
+"nome": "Felipe",
+"data_nascimento" : new Date(1994,02,26),
+"curso" : {"nome": "Mongodb"},
+"habilidades" : [
+{ "nome": "ingles", "nivel" : "avancado"  }
+]
+}
+)
+
+db.alunos.insert(
+{
+"nome": "Albero",
+"data_nascimento" : new Date(1994,02,26),
+"curso" : {"nome": "Engenharia Quimica"},
+"habilidades" : [
+{ "nome": "ingles", "nivel" : "intermediario"  }
+]
+}
+)
+
+db.alunos.insert(
+{
+"nome": "Daniela",
+"data_nascimento" : new Date(1994,02,26),
+"curso" : {"nome": "Engenharia Quimica"},
+"habilidades" : [
+{ "nome": "Alemao", "nivel" : "intermediario"  }
+]
+}
+)
