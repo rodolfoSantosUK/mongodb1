@@ -1,0 +1,4 @@
+
+
+Pesquisando na ordem decrescente e limitando a 3 resultados
+db.alunos.find().sort({"nome" : -1 }).limit(3)
