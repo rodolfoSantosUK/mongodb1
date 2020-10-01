@@ -1,0 +1,18 @@
+db.alunos.insert(
+{
+nome : "Fernando",
+data_nascimento : new Date(1994,03,26),
+notas : [10, 4.5, 7],
+"curso" : {
+nome: "Sistemas da Informação"
+}})
+
+Qual o comando para fazer um update
+Para que serve o multi : true em um update
+
+db.alunos.update({ "curso.nome" : "Engenharia Quimica"},
+ { $set : { nome : "Atualizado 2"}},
+ {multi:  true}
+)
+
+db.alunos.find().pretty();
