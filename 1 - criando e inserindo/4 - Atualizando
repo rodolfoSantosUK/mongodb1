@@ -15,4 +15,13 @@ db.alunos.update({ "curso.nome" : "Engenharia Quimica"},
  {multi:  true}
 )
 
-db.alunos.find().pretty();
+db.alunos.find({"nome" : "Fernando" }).pretty();
+
+
+db.alunos.update({"nome" : "Fernando" },
+
+                  { $push : { notas : { $each : [8.5, 3]}} })
+
+Verificar alunos que tem a nota maior que 5
+
+db.alunos.find({ "notas" : {$gt : 5}  }).pretty()
